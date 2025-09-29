@@ -62,7 +62,22 @@ main {
 /* Secciones principales */
 section {
   flex: 3;
-  margin-right: 20px;
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 6px solid #6A5ACD; 
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #6A5ACD;
+  margin-bottom: 10px;
+}
+
+section p {
+  text-align: justify;
+  margin-bottom: 10px;
 }
 
 article {
@@ -80,6 +95,36 @@ aside {
   padding: 15px;
   border-radius: 8px;
 }
+aside h3 {
+  margin-top: 20px;
+  color: #6A5ACD;
+}
+
+.noticias-aside {
+  list-style: none;
+  padding-left: 0;
+}
+
+.noticias-aside li {
+  margin-bottom: 15px;
+}
+
+.noticias-aside li a {
+  font-weight: bold;
+  color: #00BFFF;
+  text-decoration: none;
+}
+
+.noticias-aside li a:hover {
+  color: #FFA500;
+}
+
+.noticias-aside li p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
 
 /* Formularios */
 form {
@@ -120,14 +165,14 @@ form input[type="submit"]:hover {
 /* Footer */
 footer {
   background: #0B0C28;
-  color: #6A5ACD; 
-  text-align: center;   
+  color: #6A5ACD;
+  text-align: center;
   padding: 15px;
   margin-top: 20px;
 }
 
 footer p {
-  margin: 0;
+  margin: 5px 0;
   font-size: 14px;
 }
 
@@ -135,11 +180,20 @@ footer a {
   color: #00BFFF;
   text-decoration: none;
   font-weight: bold;
-  margin-left: 5px;
 }
 
 footer a:hover {
   color: #FFA500;
+}
+
+/* Bloque nosotros */
+footer .nosotros {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+footer .nosotros a {
+  color: #FF00FF; 
 }
 
 /* Responsive (celulares) */
@@ -155,4 +209,90 @@ footer a:hover {
   .logo {
     margin: 0 0 10px 0;
   }
+}
+.imagen-texto {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.imagen-texto img {
+  width: 250px;
+  border-radius: 8px;
+}
+
+/* Bloques de ventajas y desventajas */
+.ventajas, .desventajas {
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.ventajas {
+  border-left: 6px solid #00BFFF;
+}
+
+.desventajas {
+  border-left: 6px solid #FF00FF; 
+}
+
+.ventajas h3 {
+  color: #00BFFF;
+  margin-bottom: 10px;
+}
+
+.desventajas h3 {
+  color: #FF00FF;
+  margin-bottom: 10px;
+}
+
+.ventajas ul, .desventajas ul {
+  padding-left: 20px;
+}
+
+.ventajas li, .desventajas li {
+  margin-bottom: 8px;
+}
+.unesco {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 6px solid #00BFFF;
+  border-radius: 8px;
+}
+
+.unesco h2 {
+  color: #6A5ACD;
+  margin-bottom: 10px;
+}
+
+.unesco p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.contenido-principal {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.informe-banco-mundial {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 6px solid #FF00FF; 
+  border-radius: 8px;
+}
+
+.informe-banco-mundial h2 {
+  color: #FF00FF;
+  margin-bottom: 10px;
+}
+
+.informe-banco-mundial p {
+  margin-bottom: 10px;
+  text-align: justify;
 }
